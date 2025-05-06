@@ -23,12 +23,16 @@
         <members>Program_Period__c.Period_Total_Quantity__c</members>
         <members>Program_Period__c.Period_Total_Value__c</members>
         <members>Program_Period__c.Period_Type__c</members>
+        <members>Program_Support_Item__c.Funding_Program_Priority__c</members>
+        <members>Program_Support_Item__c.Funding_Program__c</members>
+        <members>Program_Support_Item__c.Support_Item__c</members>
         <members>Service_Agreement__c.Funding_Type__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Funding_Program__c</members>
         <members>Program_Period__c</members>
+        <members>Program_Support_Item__c</members>
         <name>CustomObject</name>
     </types>
     <version>63.0</version>
