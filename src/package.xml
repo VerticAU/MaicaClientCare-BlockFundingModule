@@ -26,7 +26,7 @@
         <members>Program_Period__c.Period_Type__c</members>
         <members>Program_Support_Item__c.Funding_Program_Priority__c</members>
         <members>Program_Support_Item__c.Funding_Program__c</members>
-        <members>Program_Support_Item__c.Support_Item__c</members>
+        <members>Program_Support_Item__c.maica_cc__Support_Item__c</members>
         <members>Service_Agreement__c.Funding_Type__c</members>
         <name>CustomField</name>
     </types>
