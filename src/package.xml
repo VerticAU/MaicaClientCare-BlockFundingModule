@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>Delivery_Activity__c.Reporting_Period__c</members>
         <members>Funding_Program__c.Active__c</members>
         <members>Funding_Program__c.De_identified_Sessions_Only__c</members>
         <members>Funding_Program__c.End_Date__c</members>
