@@ -128,122 +128,182 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Program_Period_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Program_Period_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <description>Represents a funding or reporting period for a Funding Program</description>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
-    <label>Funding Program</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Program Period</label>
     <nameField>
-        <label>Funding Program Name</label>
-        <type>Text</type>
+        <displayFormat>PP - {00000}</displayFormat>
+        <label>Program Period ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Funding Programs</pluralLabel>
+    <pluralLabel>Program Periods</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
     <fields>
-        <fullName>Active__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Active</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>De_identified_Sessions_Only__c</fullName>
-        <defaultValue>false</defaultValue>
-        <inlineHelpText>Denotes that only sessions for de-identified or non-specific Participant(s) are delivered under this program</inlineHelpText>
-        <label>De-identified Sessions Only</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>End_Date__c</fullName>
-        <label>End Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Funding_Period__c</fullName>
-        <label>Funding Period</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Weekly</fullName>
-                    <default>false</default>
-                    <label>Weekly</label>
-                </value>
-                <value>
-                    <fullName>Monthly</fullName>
-                    <default>false</default>
-                    <label>Monthly</label>
-                </value>
-                <value>
-                    <fullName>Quarterly</fullName>
-                    <default>false</default>
-                    <label>Quarterly</label>
-                </value>
-                <value>
-                    <fullName>Annually</fullName>
-                    <default>false</default>
-                    <label>Annually</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Funding_Target_Quantity__c</fullName>
+        <fullName>Casual_Contact_Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
         <externalId>false</externalId>
-        <inlineHelpText>Target quantity of delivered services per funding period</inlineHelpText>
-        <label>Funding Target Quantity</label>
+        <label>Casual Contact Quantity</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Funding_Target_Value__c</fullName>
-        <inlineHelpText>Target value of delivered services per funding period</inlineHelpText>
-        <label>Funding Target Value</label>
+        <fullName>Funding_Period__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <inlineHelpText>Reporting Periods must be related to a Funding Period</inlineHelpText>
+        <label>Funding Period</label>
+        <referenceTo>Program_Period__c</referenceTo>
+        <relationshipLabel>Reporting Periods</relationshipLabel>
+        <relationshipName>Program_Periods</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Funding_Period_Target_Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Inherited from parent Funding Program</inlineHelpText>
+        <label>Funding Period Target Quantity</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funding_Period_Target_Value__c</fullName>
+        <defaultValue>0</defaultValue>
+        <inlineHelpText>Inherited from the parent Funding Program</inlineHelpText>
+        <label>Funding Period Target Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Reporting_Period__c</fullName>
-        <inlineHelpText>Define the reporting period for the program, this will control scheduled creation of Program Period records</inlineHelpText>
-        <label>Reporting Period</label>
+        <fullName>Funding_Program__c</fullName>
+        <label>Funding Program</label>
+        <referenceTo>Funding_Program__c</referenceTo>
+        <relationshipLabel>Program Periods</relationshipLabel>
+        <relationshipName>Program_Periods</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Period_End_Date__c</fullName>
+        <label>Period End Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>De_identified_Sessions_Only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>De-identified Sessions Only</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Period_Quantity_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Period_Total_Quantity__c + Casual_Contact_Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Period Total Quantity + Casual Contact Quantity</inlineHelpText>
+        <label>Period Quantity Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Period_Start_Date__c</fullName>
+        <label>Period Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Period_Total_Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Period Total Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Period_Total_Value__c</fullName>
+        <defaultValue>0</defaultValue>
+        <label>Period Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Period_Type__c</fullName>
+        <label>Period Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -251,34 +311,16 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Weekly</fullName>
+                    <fullName>Funding</fullName>
                     <default>false</default>
-                    <label>Weekly</label>
+                    <label>Funding</label>
                 </value>
                 <value>
-                    <fullName>Monthly</fullName>
+                    <fullName>Reporting</fullName>
                     <default>false</default>
-                    <label>Monthly</label>
-                </value>
-                <value>
-                    <fullName>Quarterly</fullName>
-                    <default>false</default>
-                    <label>Quarterly</label>
-                </value>
-                <value>
-                    <fullName>Annually</fullName>
-                    <default>false</default>
-                    <label>Annually</label>
+                    <label>Reporting</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Start_Date__c</fullName>
-        <inlineHelpText>Commencement date of the Program, anchors the creation and date ranges for related Program Periods</inlineHelpText>
-        <label>Start Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
     </fields>
 </CustomObject>

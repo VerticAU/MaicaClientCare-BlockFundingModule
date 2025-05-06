@@ -3,11 +3,32 @@
     <types>
         <members>Funding_Program__c.Active__c</members>
         <members>Funding_Program__c.De_identified_Sessions_Only__c</members>
+        <members>Funding_Program__c.End_Date__c</members>
+        <members>Funding_Program__c.Funding_Period__c</members>
+        <members>Funding_Program__c.Funding_Target_Quantity__c</members>
+        <members>Funding_Program__c.Funding_Target_Value__c</members>
+        <members>Funding_Program__c.Reporting_Period__c</members>
+        <members>Funding_Program__c.Start_Date__c</members>
+        <members>Funding__c.Funding_Program__c</members>
+        <members>Funding__c.Service_Agreement__c</members>
+        <members>Program_Period__c.Casual_Contact_Quantity__c</members>
+        <members>Program_Period__c.Funding_Period_Target_Quantity__c</members>
+        <members>Program_Period__c.Funding_Period_Target_Value__c</members>
+        <members>Program_Period__c.Funding_Period__c</members>
+        <members>Program_Period__c.Funding_Program__c</members>
+        <members>Program_Period__c.Period_End_Date__c</members>
+        <members>Program_Period__c.De_identified_Sessions_Only__c</members>
+        <members>Program_Period__c.Period_Quantity_Grand_Total__c</members>
+        <members>Program_Period__c.Period_Start_Date__c</members>
+        <members>Program_Period__c.Period_Total_Quantity__c</members>
+        <members>Program_Period__c.Period_Total_Value__c</members>
+        <members>Program_Period__c.Period_Type__c</members>
         <members>Service_Agreement__c.Funding_Type__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Funding_Program__c</members>
+        <members>Program_Period__c</members>
         <name>CustomObject</name>
     </types>
     <version>63.0</version>
