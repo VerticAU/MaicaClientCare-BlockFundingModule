@@ -240,6 +240,18 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the priority level for assigning delivered services to the defined Funding Program</inlineHelpText>
+        <label>Priority</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Reporting_Period__c</fullName>
         <inlineHelpText>Define the reporting period for the program, this will control scheduled creation of Program Period records</inlineHelpText>
         <label>Reporting Period</label>

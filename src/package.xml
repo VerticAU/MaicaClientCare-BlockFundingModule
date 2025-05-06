@@ -7,6 +7,7 @@
         <members>Funding_Program__c.Funding_Period__c</members>
         <members>Funding_Program__c.Funding_Target_Quantity__c</members>
         <members>Funding_Program__c.Funding_Target_Value__c</members>
+        <members>Funding_Program__c.Priority__c</members>
         <members>Funding_Program__c.Reporting_Period__c</members>
         <members>Funding_Program__c.Start_Date__c</members>
         <members>Funding__c.Funding_Program__c</members>
