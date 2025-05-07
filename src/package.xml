@@ -38,5 +38,9 @@
         <members>Program_Support_Item__c</members>
         <name>CustomObject</name>
     </types>
+    <types>
+        <members>Test_Flow</members>
+        <name>Flow</name>
+    </types>
     <version>63.0</version>
 </Package>
