@@ -580,7 +580,7 @@
             <field>Support_Item__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Support_Item__c</elementReference>
+                <elementReference>$Record.maica_cc__Support_Item__c</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
