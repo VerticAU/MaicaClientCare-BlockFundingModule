@@ -657,7 +657,7 @@
         <locationY>2852</locationY>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Invoice_Line_Item__c</field>
+            <field>maica_cc__Invoice_Line_Item__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$Record.Id</elementReference>
