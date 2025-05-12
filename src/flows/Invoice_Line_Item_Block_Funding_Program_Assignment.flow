@@ -512,7 +512,7 @@
             </value>
         </filters>
         <filters>
-            <field>Funding_Source__c</field>
+            <field>maica_cc__Funding_Source__c</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Block Funded</stringValue>
