@@ -522,7 +522,7 @@
             <field>maica_cc__Start_Date__c</field>
             <operator>LessThanOrEqualTo</operator>
             <value>
-                <elementReference>$Record.Service_Date__c</elementReference>
+                <elementReference>$Record.maica_cc__Service_Date__c</elementReference>
             </value>
         </filters>
         <filters>
@@ -536,7 +536,7 @@
             <field>maica_cc__End_Date__c</field>
             <operator>GreaterThanOrEqualTo</operator>
             <value>
-                <elementReference>$Record.Service_Date__c</elementReference>
+                <elementReference>$Record.maica_cc__Service_Date__c</elementReference>
             </value>
         </filters>
         <filters>
@@ -608,14 +608,14 @@
             <field>Period_Start_Date__c</field>
             <operator>LessThanOrEqualTo</operator>
             <value>
-                <elementReference>$Record.Service_Date__c</elementReference>
+                <elementReference>$Record.maica_cc__Service_Date__c</elementReference>
             </value>
         </filters>
         <filters>
             <field>Period_End_Date__c</field>
             <operator>GreaterThanOrEqualTo</operator>
             <value>
-                <elementReference>$Record.Service_Date__c</elementReference>
+                <elementReference>$Record.maica_cc__Service_Date__c</elementReference>
             </value>
         </filters>
         <filters>
