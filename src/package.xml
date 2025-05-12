@@ -12,7 +12,7 @@
         <members>Funding_Program__c.Reporting_Period__c</members>
         <members>Funding_Program__c.Start_Date__c</members>
         <members>maica_cc__Funding__c.Funding_Program__c</members>
-        <members>maica_cc__Funding__c.Service_Agreement__c</members>
+        <members>maica_cc__Funding__c.maica_cc__Service_Agreement__c</members>
         <members>maica_cc__Invoice_Line_Item__c.Reporting_Period__c</members>
         <members>Program_Period__c.Casual_Contact_Quantity__c</members>
         <members>Program_Period__c.Funding_Period_Target_Quantity__c</members>
@@ -41,6 +41,11 @@
     <types>
         <members>Test_Flow</members>
         <name>Flow</name>
+    </types>
+    <types>
+        <members>Funding_Source</members>
+        <members>Funding_Type</members>
+        <name>GlobalValueSet</name>
     </types>
     <version>63.0</version>
 </Package>

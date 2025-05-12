@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agency Managed</fullName>
+        <default>false</default>
+        <label>Agency Managed</label>
+    </customValue>
+    <customValue>
+        <fullName>Plan Managed</fullName>
+        <default>false</default>
+        <label>Plan Managed</label>
+    </customValue>
+    <customValue>
+        <fullName>Self Managed</fullName>
+        <default>false</default>
+        <label>Self Managed</label>
+    </customValue>
+    <customValue>
+        <fullName>Combination</fullName>
+        <default>false</default>
+        <label>Combination</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Care Package</fullName>
+        <default>false</default>
+        <label>Home Care Package</label>
+    </customValue>
+    <customValue>
+        <fullName>HACC</fullName>
+        <default>false</default>
+        <label>HACC</label>
+    </customValue>
+    <customValue>
+        <fullName>CHSP</fullName>
+        <default>false</default>
+        <label>CHSP</label>
+    </customValue>
+    <customValue>
+        <fullName>DVA</fullName>
+        <default>false</default>
+        <label>DVA</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Health</fullName>
+        <default>false</default>
+        <label>Allied Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Block Funded</fullName>
+        <default>false</default>
+        <label>Block Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Health Referral</fullName>
+        <default>false</default>
+        <label>Allied Health Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Inbound Referral</fullName>
+        <default>false</default>
+        <label>Inbound Referral</label>
+    </customValue>
+    <description>Represents how the funding is managed, i.e. Plan Managed for NDIS or Home Care Package for Aged Care.</description>
+    <masterLabel>Funding Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
