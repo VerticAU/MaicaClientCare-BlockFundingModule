@@ -710,7 +710,7 @@
     <start>
         <locationX>410</locationX>
         <locationY>50</locationY>
-        <object>Invoice_Line_Item__c</object>
+        <object>maica_cc__Invoice_Line_Item__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <scheduledPaths>
             <pathType>AsyncAfterCommit</pathType>
