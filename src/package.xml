@@ -29,7 +29,6 @@
         <members>Program_Support_Item__c.Funding_Program_Priority__c</members>
         <members>Program_Support_Item__c.Funding_Program__c</members>
         <members>Program_Support_Item__c.maica_cc__Support_Item__c</members>
-        <members>maica_cc__Service_Agreement__c.Funding_Type__c</members>
         <name>CustomField</name>
     </types>
     <types>
