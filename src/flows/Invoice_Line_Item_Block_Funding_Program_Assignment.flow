@@ -18,7 +18,7 @@
             <assignToReference>GET_Funding_Period.Period_Total_Quantity__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Quantity__c</elementReference>
+                <elementReference>$Record.maica_cc__Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -34,7 +34,7 @@
             <assignToReference>GET_Funding_Period.Casual_Contact_Quantity__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Quantity__c</elementReference>
+                <elementReference>$Record.maica_cc__Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -169,7 +169,7 @@
             <assignToReference>GET_Reporting_Period_0.Period_Total_Quantity__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Quantity__c</elementReference>
+                <elementReference>$Record.maica_cc__Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -185,7 +185,7 @@
             <assignToReference>GET_Reporting_Period_0.Casual_Contact_Quantity__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Quantity__c</elementReference>
+                <elementReference>$Record.maica_cc__Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
