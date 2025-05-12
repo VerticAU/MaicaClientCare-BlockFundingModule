@@ -669,7 +669,7 @@
                 <elementReference>GET_Reporting_Period_0.Id</elementReference>
             </value>
         </inputAssignments>
-        <object>Delivery_Activity__c</object>
+        <object>maica_cc__Delivery_Activity__c</object>
     </recordUpdates>
     <recordUpdates>
         <name>UPDATE_Invoice_Line_Item</name>
