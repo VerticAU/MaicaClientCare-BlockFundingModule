@@ -408,13 +408,13 @@
     <formulas>
         <name>Funding_Period_Total_Add_Invoice_Line_Item_Total</name>
         <dataType>Number</dataType>
-        <expression>{!GET_Reporting_Period.maica_cc__Funding_Period__r.maica_cc__Period_Total_Value__c}+{!$Record.maica_cc__Line_Total__c}</expression>
+        <expression>{!GET_Reporting_Period.Funding_Period__r.Period_Total_Value__c}+{!$Record.maica_cc__Line_Total__c}</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
         <name>Funding_Period_Total_Quantity_Add_Invoice_Line_Item_Quantity</name>
         <dataType>Number</dataType>
-        <expression>{!GET_Reporting_Period.maica_cc__Funding_Period__r.maica_cc__Period_Total_Quantity__c}+{!$Record.maica_cc__Quantity__c}</expression>
+        <expression>{!GET_Reporting_Period.Funding_Period__r.Period_Total_Quantity__c}+{!$Record.maica_cc__Quantity__c}</expression>
         <scale>2</scale>
     </formulas>
     <interviewLabel>Invoice Line Item - Block Funding Program Assignment {!$Flow.CurrentDateTime}</interviewLabel>
