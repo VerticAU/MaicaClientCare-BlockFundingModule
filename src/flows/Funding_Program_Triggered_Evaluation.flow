@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>DECISION_Start_Date</name>
+        <label>DECISION Start Date</label>
+        <locationX>664</locationX>
+        <locationY>442</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Start_Date_Current_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Start_Date__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Trigger_Sub_Flow</targetReference>
+            </connector>
+            <label>Start Date &lt;= Current Date</label>
+        </rules>
+    </decisions>
+    <description>Triggered flow calls sub-flow if criteria is met to perform required data operations.</description>
+    <environments>Default</environments>
+    <interviewLabel>Funding Program - Triggered Evaluation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Funding Program - Triggered Evaluation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>547</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>DECISION_Start_Date</targetReference>
+        </connector>
+        <filterFormula>AND(
+      OR(
+             ISNEW(), ISCHANGED({!$Record.Start_Date__c}),
+        {!$Record.Active__c} = FALSE
+)
+)</filterFormula>
+        <object>Funding_Program__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Trigger_Sub_Flow</name>
+        <label>Trigger Sub-Flow</label>
+        <locationX>671</locationX>
+        <locationY>707</locationY>
+        <flowName>Block_Funding_Generate_Program_Periods</flowName>
+        <inputAssignments>
+            <name>Funding_Program_Id</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>Is_Activated_Funding_Program</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

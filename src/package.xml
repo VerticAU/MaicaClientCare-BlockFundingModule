@@ -41,6 +41,8 @@
     <types>
         <members>Block_Funding_Generate_Program_Periods</members>
         <members>Invoice_Line_Item_Block_Funding_Program_Assignment</members>
+        <members>Funding_Program_Triggered_Evaluation</members>
+        <members>Program_Period_Triggered_Evaluation</members>
         <name>Flow</name>
     </types>
     <types>
