@@ -11,7 +11,7 @@
             <assignToReference>GET_Funding_Period.Period_Total_Value__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Line_Total__c</elementReference>
+                <elementReference>$Record.maica_cc__Line_Total__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -162,7 +162,7 @@
             <assignToReference>GET_Reporting_Period_0.Period_Total_Value__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Record.Line_Total__c</elementReference>
+                <elementReference>$Record.maica_cc__Line_Total__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
