@@ -201,7 +201,7 @@
             <assignToReference>$Record.maica_cc__Service_Date__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.maica_cc__Delivery_Activity__r.Appointment_Date__c</elementReference>
+                <elementReference>$Record.maica_cc__Delivery_Activity__r.maica_cc__Appointment_Date__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
