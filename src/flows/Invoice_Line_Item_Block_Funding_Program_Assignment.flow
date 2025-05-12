@@ -554,7 +554,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Funding__c</object>
+        <object>maica_cc__Funding__c</object>
         <sortField>Program_Priority__c</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
