@@ -19,13 +19,13 @@
         <lookupFilter>
             <active>true</active>
             <filterItems>
-                <field>Service_Agreement__c.Funding_Type__c</field>
+                <field>maica_cc__Service_Agreement__c.Funding_Type__c</field>
                 <operation>equals</operation>
                 <value>Block Funded</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
-        <referenceTo>Service_Agreement__c</referenceTo>
+        <referenceTo>maica_cc__Service_Agreement__c</referenceTo>
         <relationshipLabel>Funding Sources</relationshipLabel>
         <relationshipName>Funding</relationshipName>
         <required>false</required>
