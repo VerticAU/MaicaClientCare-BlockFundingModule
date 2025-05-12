@@ -39,6 +39,7 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Block_Funding_Generate_Program_Periods</members>
         <members>Invoice_Line_Item_Block_Funding_Program_Assignment</members>
         <name>Flow</name>
     </types>
