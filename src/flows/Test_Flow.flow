@@ -43,7 +43,7 @@
         <connector>
             <targetReference>Assignment_Status</targetReference>
         </connector>
-        <object>Invoice_Line_Item__c</object>
+        <object>maica_cc__Invoice_Line_Item__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

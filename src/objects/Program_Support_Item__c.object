@@ -189,7 +189,7 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>maica_cc__Support_Item__c</fullName>
+        <fullName>Support_Item__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <label>Support Item</label>
         <referenceTo>maica_cc__Support_Item__c</referenceTo>
