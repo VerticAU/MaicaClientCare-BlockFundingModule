@@ -508,7 +508,7 @@
             <field>Service_Agreement__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Agreement_Item__r.Service_Agreement__c</elementReference>
+                <elementReference>$Record.Agreement_Item__r.maica_cc__Service_Agreement__c</elementReference>
             </value>
         </filters>
         <filters>
