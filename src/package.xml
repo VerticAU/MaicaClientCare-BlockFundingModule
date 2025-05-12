@@ -42,8 +42,8 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>Funding_Source</members>
-        <members>Funding_Type</members>
+        <members>maica_cc__Funding_Source</members>
+        <members>maica_cc__Funding_Type</members>
         <name>GlobalValueSet</name>
     </types>
     <version>63.0</version>
