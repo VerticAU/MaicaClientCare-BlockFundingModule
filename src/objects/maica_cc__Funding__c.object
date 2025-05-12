@@ -19,7 +19,7 @@
         <lookupFilter>
             <active>true</active>
             <filterItems>
-                <field>maica_cc__Service_Agreement__c.Funding_Type__c</field>
+                <field>maica_cc__Service_Agreement__c.maica_cc__Funding_Type__c</field>
                 <operation>equals</operation>
                 <value>Block Funded</value>
             </filterItems>
