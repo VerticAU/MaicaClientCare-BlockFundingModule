@@ -16,12 +16,13 @@
         <members>maica_cc__Funding__c.Program_Priority__c</members>
         <members>maica_cc__Invoice_Line_Item__c.Reporting_Period__c</members>
         <members>Program_Period__c.Casual_Contact_Quantity__c</members>
+        <members>Program_Period__c.De_identified_Sessions_Only__c</members>
         <members>Program_Period__c.Funding_Period_Target_Quantity__c</members>
         <members>Program_Period__c.Funding_Period_Target_Value__c</members>
         <members>Program_Period__c.Funding_Period__c</members>
         <members>Program_Period__c.Funding_Program__c</members>
         <members>Program_Period__c.Period_End_Date__c</members>
-        <members>Program_Period__c.De_identified_Sessions_Only__c</members>
+        <members>Program_Period__c.Period_Expired__c</members>
         <members>Program_Period__c.Period_Quantity_Grand_Total__c</members>
         <members>Program_Period__c.Period_Start_Date__c</members>
         <members>Program_Period__c.Period_Total_Quantity__c</members>

@@ -307,4 +307,12 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Period_Expired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Period Expired</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
 </CustomObject>
