@@ -82,6 +82,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Program_Period__c.Period_Quantity_Grand_Total__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Program_Period__c.Period_Start_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
