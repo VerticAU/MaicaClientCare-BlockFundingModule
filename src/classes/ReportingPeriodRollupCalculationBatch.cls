@@ -12,7 +12,7 @@ public with sharing class ReportingPeriodRollupCalculationBatch implements Datab
 
     public void execute(Database.BatchableContext bc, List<SObject> records) {
         for (SObject record : records) {
-            Response response = new InvoiceLineItemRollupCalculationProc().process(
+            Response response = new ReportingPeriodRollupCalculationProc().process(
                 new Map<String, Object>{
                     'periodId' => record.Id
                 }
