@@ -132,11 +132,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>maica_cc__Funding__c.Service_Agreement__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>maica_cc__Invoice_Line_Item__c.Reporting_Period__c</field>
         <readable>true</readable>
     </fieldPermissions>
