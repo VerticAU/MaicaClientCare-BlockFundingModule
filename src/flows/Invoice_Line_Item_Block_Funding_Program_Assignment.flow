@@ -505,10 +505,10 @@
         </connector>
         <filterLogic>1 AND 2 AND 3 AND 4 AND ((5 AND 6) OR 7)</filterLogic>
         <filters>
-            <field>Service_Agreement__c</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.maica_cc__Agreement_Item__r.maica_cc__Service_Agreement__c</elementReference>
+                <elementReference>$Record.maica_cc__Agreement_Item__r.maica_cc__Service_Agreement__r.maica_cc__Funding__c</elementReference>
             </value>
         </filters>
         <filters>
